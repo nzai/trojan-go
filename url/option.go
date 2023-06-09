@@ -7,10 +7,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/p4gefau1t/trojan-go/common"
-	"github.com/p4gefau1t/trojan-go/log"
-	"github.com/p4gefau1t/trojan-go/option"
-	"github.com/p4gefau1t/trojan-go/proxy"
+	"github.com/nzai/trojan-go/common"
+	"github.com/nzai/trojan-go/log"
+	"github.com/nzai/trojan-go/option"
+	"github.com/nzai/trojan-go/proxy"
 )
 
 const Name = "URL"
@@ -172,11 +172,12 @@ func (u *url) Handle() error {
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Debug(string(data))
+
 	client, err := proxy.NewProxyFromConfigData(data, true)
 	if err != nil {
 		log.Fatal(err)
 	}
+
 	return client.Run()
 }
 

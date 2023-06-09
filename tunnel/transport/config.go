@@ -1,7 +1,7 @@
 package transport
 
 import (
-	"github.com/p4gefau1t/trojan-go/config"
+	"github.com/nzai/trojan-go/config"
 )
 
 type Config struct {

@@ -1,0 +1,6 @@
+[INFO]  2023/06/09 15:12:42 adapter listening on tcp/udp: 127.0.0.1:20000
+[WARN]  2023/06/09 15:12:42 tls sni is unspecified
+[INFO]  2023/06/09 15:12:42 cert is unspecified, using default ca list
+[INFO]  2023/06/09 15:14:31 adapter listening on tcp/udp: 127.0.0.1:20000
+[WARN]  2023/06/09 15:14:31 tls sni is unspecified
+[INFO]  2023/06/09 15:14:31 cert is unspecified, using default ca list

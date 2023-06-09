@@ -7,11 +7,11 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/p4gefau1t/trojan-go/common"
-	"github.com/p4gefau1t/trojan-go/config"
-	"github.com/p4gefau1t/trojan-go/test/util"
-	"github.com/p4gefau1t/trojan-go/tunnel/freedom"
-	"github.com/p4gefau1t/trojan-go/tunnel/transport"
+	"github.com/nzai/trojan-go/common"
+	"github.com/nzai/trojan-go/config"
+	"github.com/nzai/trojan-go/test/util"
+	"github.com/nzai/trojan-go/tunnel/freedom"
+	"github.com/nzai/trojan-go/tunnel/transport"
 )
 
 var rsa2048Cert = `

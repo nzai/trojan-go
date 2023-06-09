@@ -9,10 +9,10 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/p4gefau1t/trojan-go/common"
-	"github.com/p4gefau1t/trojan-go/constant"
-	"github.com/p4gefau1t/trojan-go/log"
-	"github.com/p4gefau1t/trojan-go/option"
+	"github.com/nzai/trojan-go/common"
+	"github.com/nzai/trojan-go/constant"
+	"github.com/nzai/trojan-go/log"
+	"github.com/nzai/trojan-go/option"
 )
 
 type Option struct {
@@ -77,6 +77,7 @@ func (o *Option) Handle() error {
 		if err != nil {
 			log.Fatal(err)
 		}
+
 		err = proxy.Run()
 		if err != nil {
 			log.Fatal(err)
@@ -154,4 +155,8 @@ func (o *StdinOption) isFormatJson() (isJson bool, e error) {
 		return false, common.NewError("reading from stdin is disabled")
 	}
 	return strings.ToLower(*o.format) == "json", nil
+}
+
+func (o *StdinOption) Close() error {
+	return nil
 }
